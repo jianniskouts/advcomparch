@@ -1,0 +1,89 @@
+Simulation                                        
+  Frame 1                                         
+    ADB                                           
+      UPBS                                        
+        UPBS (FEM) - Initialize                     1.3474 s
+        UPBS (FEM) - Element Loop                 279.4873 s
+        UPBS (CPF)                                  0.0014 s
+      END UPBS                                    281.0047 s
+      ADO                                         
+        ADO - Update collision bodies               0.0184 s
+        AOTSQ                                     
+          AOTSQ - Initialize                        0.0287 s
+          AOTSQ - NR loop                         
+            AOTSQ - NR loop - Initialize            0.0289 s
+            UCPF                                    7.3278 s
+            NRS                                   
+              NRS - Initialize                      0.0021 s
+              NRS - Boundary conditions 1           0.0769 s
+              UPBS                                
+                UPBS (FEM) - Initialize             0.0018 s
+                UPBS (FEM) - Element Loop         352.0512 s
+                UPBS (CPF)                          0.0000 s
+              END UPBS                            352.0593 s
+              AFD (FEM)                             1.3451 s
+              AVIF                                
+                AVIF (FEM)                         45.1329 s
+                AVIF (CPF)                          0.0254 s
+              END AVIF                             45.1658 s
+              NRS - Boundary conditions 2           0.0085 s
+              NRS - Compute residual                0.1168 s
+              NRS - Copy initial guess              0.0311 s
+            END NRS                               737.4124 s
+            UPBS                                  
+              UPBS (FEM) - Initialize               0.0001 s
+              UPBS (FEM) - Element Loop           353.3444 s
+              UPBS (CPF)                            0.0000 s
+            END UPBS                              353.3494 s
+            UCPF                                    6.7302 s
+            AVIF                                  
+              AVIF (FEM)                           45.4088 s
+              AVIF (CPF)                            0.0212 s
+            END AVIF                               45.4321 s
+            AOTSQ - NR loop - Boundary conditions   0.0085 s
+            AOTSQ - NR loop - Compute residual    
+              Newton iteration residual after 1 iterations = 322.108
+              Newton converged in 1 steps for object 1
+            END AOTSQ - NR loop - Compute residual  0.1716 s
+          END AOTSQ - NR loop                     1150.5578 s
+        END AOTSQ                                 1150.5916 s
+      END ADO                                     1150.6237 s
+    END ADB                                       1431.6551 s
+  END Frame 1                                     1432.0375 s
+SIMULATION                                          0.0000
+  FRAME                                           1432.0375
+    ADB                                           1431.6551
+      UPBS                                        281.0047
+        UPBS (FEM) - Initialize                     1.3474 s
+        UPBS (FEM) - Element Loop                 279.4873 s
+        UPBS (CPF)                                  0.0014 s
+      ADO                                         1150.6237
+        ADO - Update collision bodies               0.0184 s
+        AOTSQ                                     1150.5916
+          AOTSQ - Initialize                        0.0287 s
+          AOTSQ - NR loop                         1150.5578
+            AOTSQ - NR loop - Initialize            0.0289 s
+            UCPF                                   14.0580 s
+            NRS                                   737.4124
+              NRS - Initialize                      0.0021 s
+              NRS - Boundary conditions 1           0.0769 s
+              UPBS                                352.0593
+                UPBS (FEM) - Initialize             0.0018 s
+                UPBS (FEM) - Element Loop         352.0512 s
+                UPBS (CPF)                          0.0000 s
+              AFD (FEM)                             1.3451 s
+              AVIF                                 45.1658
+                AVIF (FEM)                         45.1329 s
+                AVIF (CPF)                          0.0254 s
+              NRS - Boundary conditions 2           0.0085 s
+              NRS - Compute residual                0.1168
+              NRS - Copy initial guess              0.0311 s
+            UPBS                                  353.3494
+              UPBS (FEM) - Initialize               0.0001 s
+              UPBS (FEM) - Element Loop           353.3444 s
+              UPBS (CPF)                            0.0000 s
+            AVIF                                   45.4321
+              AVIF (FEM)                           45.4088 s
+              AVIF (CPF)                            0.0212 s
+            AOTSQ - NR loop - Boundary conditions   0.0085 s
+            AOTSQ - NR loop - Compute residual      0.1716 s

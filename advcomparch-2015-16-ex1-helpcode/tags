@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESS_RESULT_NUM	pintool/cache.h	/^        ACCESS_RESULT_NUM$/;"	e	enum:TWO_LEVEL_CACHE::__anon3
+ACCESS_TYPE	pintool/cache.h	/^    } ACCESS_TYPE;$/;"	t	class:TWO_LEVEL_CACHE	typeref:enum:TWO_LEVEL_CACHE::__anon2
+ACCESS_TYPE_LOAD	pintool/cache.h	/^        ACCESS_TYPE_LOAD,$/;"	e	enum:TWO_LEVEL_CACHE::__anon2
+ACCESS_TYPE_NUM	pintool/cache.h	/^        ACCESS_TYPE_NUM$/;"	e	enum:TWO_LEVEL_CACHE::__anon2
+ACCESS_TYPE_STORE	pintool/cache.h	/^        ACCESS_TYPE_STORE,$/;"	e	enum:TWO_LEVEL_CACHE::__anon2
+Access	pintool/cache.h	/^UINT32 TWO_LEVEL_CACHE<SET>::Access(ADDRINT addr, ACCESS_TYPE accessType)$/;"	f	class:TWO_LEVEL_CACHE
+CACHE_H	pintool/cache.h	2;"	d
+CACHE_SET	pintool/cache.h	/^namespace CACHE_SET$/;"	n
+CACHE_STATS	pintool/cache.h	/^typedef UINT64 CACHE_STATS; \/\/ type of cache hit\/miss counters$/;"	t
+CACHE_T	pintool/cslab_cache.cpp	/^typedef TWO_LEVEL_CACHE<CACHE_SET::LRU> CACHE_T;$/;"	t	file:
+CACHE_TAG	pintool/cache.h	/^    CACHE_TAG(ADDRINT tag = 0) { _tag = tag; }$/;"	f	class:CACHE_TAG
+CACHE_TAG	pintool/cache.h	/^class CACHE_TAG$/;"	c
+CONFIG_ROOT	pintool/Makefile	/^CONFIG_ROOT := $(PIN_ROOT)\/source\/tools\/Config$/;"	m
+DeleteIfPresent	pintool/cache.h	/^    VOID DeleteIfPresent(CACHE_TAG tag)$/;"	f	class:CACHE_SET::LRU
+Find	pintool/cache.h	/^    UINT32 Find(CACHE_TAG tag)$/;"	f	class:CACHE_SET::LRU
+Fini	pintool/cslab_cache.cpp	/^VOID Fini(int code, VOID * v)$/;"	f
+FloorLog2	pintool/cache.h	/^static inline INT32 FloorLog2(UINT32 n)$/;"	f
+GIGA	pintool/cache.h	31;"	d
+GetAssociativity	pintool/cache.h	/^    UINT32 GetAssociativity() { return _associativity; }$/;"	f	class:CACHE_SET::LRU
+HIT_L1	pintool/cache.h	/^        HIT_L1 = 0,$/;"	e	enum:TWO_LEVEL_CACHE::__anon3
+HIT_L2	pintool/cache.h	/^        HIT_L2,$/;"	e	enum:TWO_LEVEL_CACHE::__anon3
+HIT_MISS_NUM	pintool/cache.h	/^    static const UINT32 HIT_MISS_NUM = 2;$/;"	m	class:TWO_LEVEL_CACHE
+Instruction	pintool/cslab_cache.cpp	/^VOID Instruction(INS ins, void * v)$/;"	f
+IsPowerOf2	pintool/cache.h	/^static inline bool IsPowerOf2(UINT32 n)$/;"	f
+KILO	pintool/cache.h	29;"	d
+L1Accesses	pintool/cache.h	/^    CACHE_STATS L1Accesses() const { return L1Hits() + L1Misses();}$/;"	f	class:TWO_LEVEL_CACHE
+L1Accesses	pintool/cache.h	/^    CACHE_STATS L1Accesses(ACCESS_TYPE accessType) const { return L1Hits(accessType) + L1Misses(accessType);}$/;"	f	class:TWO_LEVEL_CACHE
+L1Associativity	pintool/cache.h	/^    UINT32 L1Associativity() const { return _l1_associativity; }$/;"	f	class:TWO_LEVEL_CACHE
+L1BlockSize	pintool/cache.h	/^    UINT32 L1BlockSize() const { return _l1_blockSize; }$/;"	f	class:TWO_LEVEL_CACHE
+L1CacheSize	pintool/cache.h	/^    UINT32 L1CacheSize() const { return _l1_cacheSize; }$/;"	f	class:TWO_LEVEL_CACHE
+L1Hits	pintool/cache.h	/^    CACHE_STATS L1Hits() const { return L1SumAccess(true);}$/;"	f	class:TWO_LEVEL_CACHE
+L1Hits	pintool/cache.h	/^    CACHE_STATS L1Hits(ACCESS_TYPE accessType) const { return _l1_access[accessType][true];}$/;"	f	class:TWO_LEVEL_CACHE
+L1LineShift	pintool/cache.h	/^    UINT32 L1LineShift() const { return _l1_lineShift; }$/;"	f	class:TWO_LEVEL_CACHE
+L1Misses	pintool/cache.h	/^    CACHE_STATS L1Misses() const { return L1SumAccess(false);}$/;"	f	class:TWO_LEVEL_CACHE
+L1Misses	pintool/cache.h	/^    CACHE_STATS L1Misses(ACCESS_TYPE accessType) const { return _l1_access[accessType][false];}$/;"	f	class:TWO_LEVEL_CACHE
+L1NumSets	pintool/cache.h	/^    UINT32 L1NumSets() const { return _l1_setIndexMask + 1; }$/;"	f	class:TWO_LEVEL_CACHE
+L1SetIndexMask	pintool/cache.h	/^    UINT32 L1SetIndexMask() const { return _l1_setIndexMask; }$/;"	f	class:TWO_LEVEL_CACHE
+L1SumAccess	pintool/cache.h	/^    CACHE_STATS L1SumAccess(bool hit) const$/;"	f	class:TWO_LEVEL_CACHE
+L2Accesses	pintool/cache.h	/^    CACHE_STATS L2Accesses() const { return L2Hits() + L2Misses();}$/;"	f	class:TWO_LEVEL_CACHE
+L2Accesses	pintool/cache.h	/^    CACHE_STATS L2Accesses(ACCESS_TYPE accessType) const { return L2Hits(accessType) + L2Misses(accessType);}$/;"	f	class:TWO_LEVEL_CACHE
+L2Associativity	pintool/cache.h	/^    UINT32 L2Associativity() const { return _l2_associativity; }$/;"	f	class:TWO_LEVEL_CACHE
+L2BlockSize	pintool/cache.h	/^    UINT32 L2BlockSize() const { return _l2_blockSize; }$/;"	f	class:TWO_LEVEL_CACHE
+L2CacheSize	pintool/cache.h	/^    UINT32 L2CacheSize() const { return _l2_cacheSize; }$/;"	f	class:TWO_LEVEL_CACHE
+L2Hits	pintool/cache.h	/^    CACHE_STATS L2Hits() const { return L2SumAccess(true);}$/;"	f	class:TWO_LEVEL_CACHE
+L2Hits	pintool/cache.h	/^    CACHE_STATS L2Hits(ACCESS_TYPE accessType) const { return _l2_access[accessType][true];}$/;"	f	class:TWO_LEVEL_CACHE
+L2LineShift	pintool/cache.h	/^    UINT32 L2LineShift() const { return _l2_lineShift; }$/;"	f	class:TWO_LEVEL_CACHE
+L2Misses	pintool/cache.h	/^    CACHE_STATS L2Misses() const { return L2SumAccess(false);}$/;"	f	class:TWO_LEVEL_CACHE
+L2Misses	pintool/cache.h	/^    CACHE_STATS L2Misses(ACCESS_TYPE accessType) const { return _l2_access[accessType][false];}$/;"	f	class:TWO_LEVEL_CACHE
+L2NumSets	pintool/cache.h	/^    UINT32 L2NumSets() const { return _l2_setIndexMask + 1; }$/;"	f	class:TWO_LEVEL_CACHE
+L2SetIndexMask	pintool/cache.h	/^    UINT32 L2SetIndexMask() const { return _l2_setIndexMask; }$/;"	f	class:TWO_LEVEL_CACHE
+L2SumAccess	pintool/cache.h	/^    CACHE_STATS L2SumAccess(bool hit) const$/;"	f	class:TWO_LEVEL_CACHE
+L2_INCLUSIVE	pintool/cache.h	12;"	d
+LRU	pintool/cache.h	/^    LRU(UINT32 associativity = 8)$/;"	f	class:CACHE_SET::LRU
+LRU	pintool/cache.h	/^class LRU $/;"	c	namespace:CACHE_SET
+Load	pintool/cslab_cache.cpp	/^VOID Load(ADDRINT addr)$/;"	f
+MEGA	pintool/cache.h	30;"	d
+MISS_L2	pintool/cache.h	/^        MISS_L2,$/;"	e	enum:TWO_LEVEL_CACHE::__anon3
+Name	pintool/cache.h	/^    string Name() { return "LRU"; }$/;"	f	class:CACHE_SET::LRU
+PIN_ROOT	pintool/Makefile	/^PIN_ROOT ?= \/path\/to\/pin-2.14-71313-gcc.4.4.7-linux$/;"	m
+PrintCache	pintool/cache.h	/^string TWO_LEVEL_CACHE<SET>::PrintCache(string prefix) const$/;"	f	class:TWO_LEVEL_CACHE
+Replace	pintool/cache.h	/^    CACHE_TAG Replace(CACHE_TAG tag)$/;"	f	class:CACHE_SET::LRU
+Routine	pintool/cslab_cache.cpp	/^VOID Routine(RTN rtn, void *v)$/;"	f
+STORE_ALLOCATE	pintool/cache.h	/^    STORE_ALLOCATE = 0,$/;"	e	enum:__anon1
+STORE_ALLOCATION	pintool/cache.h	25;"	d
+STORE_ALLOCATION	pintool/cslab_cache.cpp	7;"	d	file:
+STORE_NO_ALLOCATE	pintool/cache.h	/^    STORE_NO_ALLOCATE$/;"	e	enum:__anon1
+SetAssociativity	pintool/cache.h	/^    VOID SetAssociativity(UINT32 associativity)$/;"	f	class:CACHE_SET::LRU
+SplitAddress	pintool/cache.h	/^    VOID SplitAddress(const ADDRINT addr, UINT32 lineShift, UINT32 setIndexMask,$/;"	f	class:TWO_LEVEL_CACHE
+StatsLong	pintool/cache.h	/^string TWO_LEVEL_CACHE<SET>::StatsLong(string prefix) const$/;"	f	class:TWO_LEVEL_CACHE
+Store	pintool/cslab_cache.cpp	/^VOID Store(ADDRINT addr)$/;"	f
+TWO_LEVEL_CACHE	pintool/cache.h	/^TWO_LEVEL_CACHE<SET>::TWO_LEVEL_CACHE($/;"	f	class:TWO_LEVEL_CACHE
+TWO_LEVEL_CACHE	pintool/cache.h	/^class TWO_LEVEL_CACHE$/;"	c
+Usage	pintool/cslab_cache.cpp	/^INT32 Usage()$/;"	f
+_associativity	pintool/cache.h	/^    UINT32 _associativity;$/;"	m	class:CACHE_SET::LRU
+_l1_access	pintool/cache.h	/^    CACHE_STATS _l1_access[ACCESS_TYPE_NUM][HIT_MISS_NUM];$/;"	m	class:TWO_LEVEL_CACHE
+_l1_associativity	pintool/cache.h	/^    const UINT32 _l1_associativity;$/;"	m	class:TWO_LEVEL_CACHE
+_l1_blockSize	pintool/cache.h	/^    const UINT32 _l1_blockSize;$/;"	m	class:TWO_LEVEL_CACHE
+_l1_cacheSize	pintool/cache.h	/^    const UINT32 _l1_cacheSize;$/;"	m	class:TWO_LEVEL_CACHE
+_l1_lineShift	pintool/cache.h	/^    const UINT32 _l1_lineShift; \/\/ i.e. no of block offset bits$/;"	m	class:TWO_LEVEL_CACHE
+_l1_setIndexMask	pintool/cache.h	/^    const UINT32 _l1_setIndexMask; \/\/ mask applied to get the set index$/;"	m	class:TWO_LEVEL_CACHE
+_l1_sets	pintool/cache.h	/^    SET *_l1_sets;$/;"	m	class:TWO_LEVEL_CACHE
+_l2_access	pintool/cache.h	/^    CACHE_STATS _l2_access[ACCESS_TYPE_NUM][HIT_MISS_NUM];$/;"	m	class:TWO_LEVEL_CACHE
+_l2_associativity	pintool/cache.h	/^    const UINT32 _l2_associativity;$/;"	m	class:TWO_LEVEL_CACHE
+_l2_blockSize	pintool/cache.h	/^    const UINT32 _l2_blockSize;$/;"	m	class:TWO_LEVEL_CACHE
+_l2_cacheSize	pintool/cache.h	/^    const UINT32 _l2_cacheSize;$/;"	m	class:TWO_LEVEL_CACHE
+_l2_lineShift	pintool/cache.h	/^    const UINT32 _l2_lineShift;$/;"	m	class:TWO_LEVEL_CACHE
+_l2_setIndexMask	pintool/cache.h	/^    const UINT32 _l2_setIndexMask;$/;"	m	class:TWO_LEVEL_CACHE
+_l2_sets	pintool/cache.h	/^    SET *_l2_sets;$/;"	m	class:TWO_LEVEL_CACHE
+_latencies	pintool/cache.h	/^    UINT32 _latencies[ACCESS_RESULT_NUM];$/;"	m	class:TWO_LEVEL_CACHE
+_name	pintool/cache.h	/^    const std::string _name;$/;"	m	class:TWO_LEVEL_CACHE
+_tag	pintool/cache.h	/^    ADDRINT _tag;$/;"	m	class:CACHE_TAG
+_tags	pintool/cache.h	/^    std::vector<CACHE_TAG> _tags;$/;"	m	class:CACHE_SET::LRU
+count_instruction	pintool/cslab_cache.cpp	/^VOID count_instruction()$/;"	f
+dec2str	pintool/cache.h	/^static string dec2str(UINT64 v, UINT32 w)$/;"	f
+main	pintool/cslab_cache.cpp	/^int main(int argc, char *argv[])$/;"	f
+operator ==	pintool/cache.h	/^    bool operator==(const CACHE_TAG &right) const { return _tag == right._tag; }$/;"	f	class:CACHE_TAG
+operator ADDRINT	pintool/cache.h	/^    operator ADDRINT() const { return _tag; }$/;"	f	class:CACHE_TAG
+outFile	pintool/cslab_cache.cpp	/^std::ofstream outFile;$/;"	v
+roi_begin	pintool/cslab_cache.cpp	/^VOID roi_begin()$/;"	f
+roi_end	pintool/cslab_cache.cpp	/^VOID roi_end()$/;"	f
+total_cycles	pintool/cslab_cache.cpp	/^UINT64 total_cycles, total_instructions;$/;"	v
+total_instructions	pintool/cslab_cache.cpp	/^UINT64 total_cycles, total_instructions;$/;"	v
+two_level_cache	pintool/cslab_cache.cpp	/^CACHE_T *two_level_cache;$/;"	v

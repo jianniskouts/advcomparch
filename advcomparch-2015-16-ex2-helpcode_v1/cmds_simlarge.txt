@@ -1,0 +1,10 @@
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/blackscholes 1 /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/in_64K.txt prices.txt
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/bodytrack /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/sequenceB_4 4 4 4000 5 0 1
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/canneal 1 15000 2000 /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/400000.nets 128
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/facesim -timing -threads 1
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/ferret /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/corel lsh /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/queries 10 20 1 output.txt
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/fluidanimate 1 5 /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/in_300K.fluid out.fluid
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/freqmine /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/kosarak_990k.dat 790
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/rtview /home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/inputs/happy_buddha.obj -automove -nthreads 1 -frames 3 -res 1920 1080
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/streamcluster 10 20 128 16384 16384 1000 none output.txt 1
+/home/user/pin-2.14-71313-gcc.4.4.7-linux/parsec-3.0/parsec_workspace/executables/swaptions -ns 64 -sm 40000 -nt 1

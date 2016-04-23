@@ -1,0 +1,10 @@
+./executables/blackscholes 1 inputs/in_64K.txt prices.txt
+./executables/bodytrack inputs/sequenceB_4 4 4 4000 5 0 1
+./executables/canneal 1 15000 2000 inputs/400000.nets 128
+./executables/facesim -timing -threads 1
+./executables/ferret inputs/corel lsh inputs/queries 10 20 1 output.txt
+./executables/fluidanimate 1 5 inputs/in_300K.fluid out.fluid
+./executables/freqmine inputs/kosarak_990k.dat 790
+./executables/rtview inputs/happy_buddha.obj -automove -nthreads 1 -frames 3 -res 1920 1080
+./executables/streamcluster 10 20 128 16384 16384 1000 none output.txt 1
+./executables/swaptions -ns 64 -sm 40000 -nt 1
